@@ -10,15 +10,17 @@ import '@/styles/index.scss';
 // 初始化css 重置css默认样式
 import 'normalize.css/normalize.css';
 // svg icons
-import initSvgIcon from '@/icons/index';
+// import initSvgIcon from '@/icons/index';
+
+import 'virtual:svg-icons-register';
 
 const app = createApp(App);
-
-
 
 app
   .use(router)
   .use(store)
   .use(installElementPlus)
-  .use(initSvgIcon)
+  // .use(initSvgIcon)
   .mount('#app');
+
+console.log('app', app);

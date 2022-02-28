@@ -2,8 +2,10 @@
   <div>
     <h1>Dashboard page</h1>
     <svg-icon icon-class="bug"></svg-icon>
+    <svg-icon name="bug"></svg-icon>
     <!-- icon-class svg图标名称 class-name 额外的自定义类名 @click绑定事件 -->
     <svg-icon icon-class="404" class-name="custom-class" @click="sayHi"></svg-icon>
+    <svg-icon name="404" class-name="custom-class" @click="sayHi"></svg-icon>
   </div>
 </template>
 
